@@ -1,5 +1,7 @@
 class Card():
-    def __init__(self, a, b, c, d):
-        self.attributes = set(a, b, c, d)
+    def __init__(self, attributes: "list[int]"):
+        self.attributes = attributes
+        print(attributes)
 
     def __add__():
+        pass
