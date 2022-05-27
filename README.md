@@ -6,7 +6,7 @@ Taking a look at the game Set, and running scripts to determine game behavior
 
 In my own words, [Set](https://www.playmonster.com/product/set/) is a pattern-matching speed-style card game where the goal is to form sets of 3 cards with complete matching or non-matching attributes.
 
-This is more clearly described on the game's official website - [PlayMonster.com](https://www.playmonster.com/product/set/)(May 2022) - also listed below:
+This is more clearly described on the game's official website - [PlayMonster.com](https://www.playmonster.com/product/set/) (May 2022) - also listed below:
 
 > The award-winning game challenges players to race to find as many SETs as they can! A SET is three cards where each individual feature (color, shape, number and shading) is either all the same OR all different! The first player to see a SET calls out “SET” and grabs the cards—there are no “turns” and no luck here! And not only is it fast-paced fun, it also builds skills and exercises the brain! Because it has a rule of logic, and because players must apply this rule to the spatial array of patterns all at once, they must use both left brain and right brain thought processes! At the end of the game, the player with the most SETs wins! SET is prefect for a wide age range and number of players (including solo play!), and is a fun intergenerational game as well.
 

@@ -2,7 +2,7 @@
 
 ## Sources
 
-Originally obtained from [setgame.com](https://www.setgame.com/sites/default/files/instructions/SET%20INSTRUCTIONS%20-%20ENGLISH.pdf)(May 2022)
+Originally obtained from [setgame.com](https://www.setgame.com/sites/default/files/instructions/SET%20INSTRUCTIONS%20-%20ENGLISH.pdf) (May 2022)
 
 Original PDF available [here](./docs/SET-INSTRUCTIONS-ENGLISH.pdf) (Credit to [pdftoimage.com](https://pdftoimage.com/) for the JPEG copies)
 
