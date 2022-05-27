@@ -1,7 +1,13 @@
 class Card():
     def __init__(self, attributes: "list[int]"):
         self.__attributes = attributes
-        print(attributes)
+
+    def __radd__(self, obj):
+        if obj == 0:
+            # Handle start of sum()
+            return self.__attributes
+        else:
+            return self.__add__(obj)
 
     def __add__(self, obj):
         """
@@ -26,7 +32,15 @@ class Card():
 
         for a, b in zip(self.__attributes, objValues):
             result.append(a+b)
+
+        print(f"Card sum result: {result}")
         return result
+
+    # def __iter__(self) -> "list[int]":
+    #     return list(self.__attributes)
+
+    # def __next__(self):
+    #     return self.__iter__()
 
     def __copy__(self):
         return Card(self.__attributes)
