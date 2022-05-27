@@ -33,7 +33,6 @@ class Card():
         for a, b in zip(self.__attributes, otherValues):
             result.append(a+b)
 
-        print(f"Card sum result: {result}")
         return result
 
     # def __iter__(self) -> "list[int]":
@@ -44,3 +43,9 @@ class Card():
 
     def __copy__(self):
         return Card(self.__attributes)
+
+    def __str__(self):
+        return str(self.__attributes)
+
+    def __repr__(self):
+        return self.__str__()
