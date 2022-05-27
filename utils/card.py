@@ -2,35 +2,35 @@ class Card():
     def __init__(self, attributes: "list[int]"):
         self.__attributes = attributes
 
-    def __radd__(self, obj):
-        if obj == 0:
+    def __radd__(self, other):
+        if other == 0:
             # Handle start of sum()
             return self.__attributes
         else:
-            return self.__add__(obj)
+            return self.__add__(other)
 
-    def __add__(self, obj):
+    def __add__(self, other):
         """
         Add attribues of another card of the same attribute size.
         Can add bare attributes list, if desired.
         """
         result: "list[int]" = []
-        objValues: "list[int]" = None
-        if type(obj) == type(self):
-            # obj is card
-            objValues = obj.__attributes
-        elif type(obj) == type(result):
-            # obj is attributes list
-            objValues = obj
+        otherValues: "list[int]" = None
+        if type(other) == type(self):
+            # other is card
+            otherValues = other.__attributes
+        elif type(other) == type(result):
+            # other is attributes list
+            otherValues = other
         else:
             raise TypeError(
-                "Unable to add type Card to type: " + str(type(obj)))
+                "Unable to add type Card to type: " + str(type(other)))
 
-        if len(self.__attributes) != len(objValues):
+        if len(self.__attributes) != len(otherValues):
             raise ValueError(
-                f"Unable to add Card with different attributes. Got {str(len(objValues))}, expected {str(len(self.__attributes))}")
+                f"Unable to add Card with different attributes. Got {str(len(otherValues))}, expected {str(len(self.__attributes))}")
 
-        for a, b in zip(self.__attributes, objValues):
+        for a, b in zip(self.__attributes, otherValues):
             result.append(a+b)
 
         print(f"Card sum result: {result}")
