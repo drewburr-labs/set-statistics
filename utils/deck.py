@@ -1,11 +1,23 @@
 from .card import Card
+from copy import copy
 
 
 class Deck ():
     def __init__(self):
         self.__attributes = (3, 3, 3, 3)
         self.__deck = self.__generateDeck()
-        print(self.__deck)
+
+    @property
+    def cards(self) -> "list[Card]":
+        """
+        Returns a copy of the deck
+        """
+        newDeck: "list[Card]" = []
+        for card in self.__deck:
+            newDeck.append(copy(card))
+
+        print(f"new deck length: {len(newDeck)}")
+        return newDeck
 
     def draw(self, count: int = 1):
         """
