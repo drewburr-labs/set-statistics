@@ -25,3 +25,5 @@ In this repository, you'll see references to a 'play' quite frequently. A play r
 ## Invalid plays
 
 In the game of Set, there is a condition where if all players aggree that if no sets can be found, 3 additional cards are temporarily added to the play. This is to ensure gameplay keeps moving, and can assist players who are less seasoned. The question I'd like to answer with this is, of all the available possible plays, how often is this condition necessary? Out of all the possible plays, how many of them contain no valid sets?
+
+About 4 hours into working on this, I realized that there are 70,724,320,184,700 possible plays in Set. If I'm going to do figure this out, I can't brute force it.
