@@ -16,7 +16,6 @@ class Deck ():
         for card in self.__deck:
             newDeck.append(copy(card))
 
-        print(f"new deck length: {len(newDeck)}")
         return newDeck
 
     def draw(self, count: int = 1):
@@ -63,9 +62,6 @@ class Deck ():
         """
         Shuffle the deck in its current state.
         """
-        pass
-
-    def reset(self):
         pass
 
     def __sizeof__(self) -> int:
